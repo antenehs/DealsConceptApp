@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="HotelTableViewCell" customModule="UpsideDeals" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marriott Hotel" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj6-Zz-90g">
+                        <rect key="frame" x="81" y="19" width="223" height="23"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-filled" translatesAutoresizingMaskIntoConstraints="NO" id="WCQ-0W-x1t">
+                        <rect key="frame" x="81" y="70" width="13" height="13"/>
+                        <color key="tintColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="X4L-To-Q6E"/>
+                            <constraint firstAttribute="height" constant="13" id="lsL-nn-b5m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tU6-7m-88C">
+                        <rect key="frame" x="96" y="66" width="19.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="woN-aF-2rC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 NIGHTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3V-1O-gXE">
+                        <rect key="frame" x="81" y="43" width="218" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="uvQ-HN-poa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotel-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="OxC-wl-3DR">
+                        <rect key="frame" x="16" y="26" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="HPa-us-3Sy"/>
+                            <constraint firstAttribute="height" constant="50" id="QrY-ux-osL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tU6-7m-88C" firstAttribute="centerY" secondItem="WCQ-0W-x1t" secondAttribute="centerY" id="6R9-oB-9fY"/>
+                    <constraint firstItem="OxC-wl-3DR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8At-BU-3rb"/>
+                    <constraint firstItem="OxC-wl-3DR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="BJs-PP-Uoo"/>
+                    <constraint firstItem="tU6-7m-88C" firstAttribute="top" secondItem="s3V-1O-gXE" secondAttribute="bottom" constant="8" id="BMA-Ky-6fg"/>
+                    <constraint firstItem="Xj6-Zz-90g" firstAttribute="leading" secondItem="OxC-wl-3DR" secondAttribute="trailing" constant="15" id="Dx1-Gz-GCE"/>
+                    <constraint firstItem="s3V-1O-gXE" firstAttribute="leading" secondItem="Xj6-Zz-90g" secondAttribute="leading" id="PXO-MU-NCr"/>
+                    <constraint firstItem="Xj6-Zz-90g" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="XVx-8f-qze"/>
+                    <constraint firstItem="Xj6-Zz-90g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="p7j-6k-M2T"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="s3V-1O-gXE" secondAttribute="trailing" constant="5" id="r2p-7S-KBt"/>
+                    <constraint firstAttribute="bottom" secondItem="tU6-7m-88C" secondAttribute="bottom" constant="12.5" id="sKI-le-kEl"/>
+                    <constraint firstItem="WCQ-0W-x1t" firstAttribute="leading" secondItem="Xj6-Zz-90g" secondAttribute="leading" id="sPy-f0-btS"/>
+                    <constraint firstItem="tU6-7m-88C" firstAttribute="leading" secondItem="WCQ-0W-x1t" secondAttribute="trailing" constant="2" id="weM-xO-wyj"/>
+                    <constraint firstItem="s3V-1O-gXE" firstAttribute="top" secondItem="Xj6-Zz-90g" secondAttribute="bottom" constant="1" id="xWl-ot-350"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="hotelImageLabel" destination="OxC-wl-3DR" id="p3j-5L-zfd"/>
+                <outlet property="hotelNameLabel" destination="Xj6-Zz-90g" id="8pJ-s5-9To"/>
+                <outlet property="numberOfNightsLabel" destination="s3V-1O-gXE" id="qjZ-je-w5k"/>
+                <outlet property="ratingLabel" destination="tU6-7m-88C" id="4X7-aD-h8S"/>
+                <outlet property="starImageView" destination="WCQ-0W-x1t" id="NYz-E9-efQ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="39"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotel-placeholder" width="33" height="33"/>
+        <image name="star-filled" width="33" height="33"/>
+    </resources>
+</document>

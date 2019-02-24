@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StretchyHeaderView" customModule="UpsideDeals" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="o0p-em-zL6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pU-rI-SmP" customClass="ASAGradientView" customModule="UpsideDeals" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sweeet Deals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="HmX-TD-UWS">
+                    <rect key="frame" x="87.5" y="49" width="200" height="139"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="kxz-8N-sF9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="55"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxP-hU-irG">
+                    <rect key="frame" x="16" y="40" width="44" height="157"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLw-hH-cS0">
+                            <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="J2n-L2-OSw"/>
+                                <constraint firstAttribute="width" constant="44" id="WQY-Q1-zBm"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                            <state key="normal" image="settings-light"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapLeftButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="m0s-lT-ass"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="20H-i7-T8A"/>
+                        <constraint firstItem="eLw-hH-cS0" firstAttribute="top" relation="lessThanOrEqual" secondItem="UxP-hU-irG" secondAttribute="top" constant="20" id="9no-Hz-Ogg"/>
+                        <constraint firstAttribute="trailing" secondItem="eLw-hH-cS0" secondAttribute="trailing" id="ACh-CH-WFb"/>
+                        <constraint firstItem="eLw-hH-cS0" firstAttribute="leading" secondItem="UxP-hU-irG" secondAttribute="leading" id="oXn-bO-Xx2"/>
+                        <constraint firstItem="eLw-hH-cS0" firstAttribute="centerY" secondItem="UxP-hU-irG" secondAttribute="centerY" priority="750" id="ppv-z3-AW2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1pU-rI-SmP" secondAttribute="trailing" id="17L-nY-U4j"/>
+                <constraint firstItem="1pU-rI-SmP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8jg-mM-Jgj"/>
+                <constraint firstItem="o0p-em-zL6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="8uT-ZE-T01"/>
+                <constraint firstItem="HmX-TD-UWS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="GBB-yk-hFq"/>
+                <constraint firstItem="UxP-hU-irG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="H8f-1J-mex"/>
+                <constraint firstItem="o0p-em-zL6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JCI-j1-ve1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1pU-rI-SmP" secondAttribute="bottom" id="K19-7J-ZhZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UxP-hU-irG" secondAttribute="bottom" constant="10" id="LFj-6E-Ofy"/>
+                <constraint firstItem="HmX-TD-UWS" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="PB3-qe-4ku"/>
+                <constraint firstItem="o0p-em-zL6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Tue-F8-9pk"/>
+                <constraint firstItem="o0p-em-zL6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VW9-ET-yjO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="HmX-TD-UWS" secondAttribute="bottom" constant="10" id="cn6-7U-g6D"/>
+                <constraint firstItem="HmX-TD-UWS" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="15" id="sl0-vz-MJO"/>
+                <constraint firstItem="UxP-hU-irG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="uKg-Mc-6TZ"/>
+                <constraint firstItem="1pU-rI-SmP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yDi-Vd-Fi0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="maximumContentHeight">
+                    <real key="value" value="200"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backgroundImageView" destination="o0p-em-zL6" id="WeO-qY-207"/>
+                <outlet property="gradientView" destination="1pU-rI-SmP" id="kPa-BU-VGi"/>
+                <outlet property="leftButton" destination="eLw-hH-cS0" id="Fcm-UN-yrq"/>
+                <outlet property="titleLabel" destination="HmX-TD-UWS" id="t4L-Vy-7bn"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="39.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="settings-light" width="50" height="50"/>
+        <image name="travel" width="301" height="134"/>
+    </resources>
+</document>

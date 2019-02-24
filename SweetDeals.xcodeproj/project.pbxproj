@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6667182320A68A7B009EDA7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667182220A68A7B009EDA7F /* AppDelegate.swift */; };
+		6667182520A68A7B009EDA7F /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667182420A68A7B009EDA7F /* DealsViewController.swift */; };
+		6667182820A68A7B009EDA7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6667182620A68A7B009EDA7F /* Main.storyboard */; };
+		6667182A20A68A7E009EDA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6667182920A68A7E009EDA7F /* Assets.xcassets */; };
+		6667182D20A68A7E009EDA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6667182B20A68A7E009EDA7F /* LaunchScreen.storyboard */; };
+		6667184820A68BC8009EDA7F /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667184720A68BC8009EDA7F /* APIRequest.swift */; };
+		6667184A20A68D7E009EDA7F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667184920A68D7E009EDA7F /* DataManager.swift */; };
+		6667184C20A69080009EDA7F /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667184B20A69080009EDA7F /* Hotel.swift */; };
+		6667184E20A690E5009EDA7F /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667184D20A690E5009EDA7F /* Airport.swift */; };
+		6667185020A691B4009EDA7F /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667184F20A691B4009EDA7F /* Airline.swift */; };
+		6667185220A72615009EDA7F /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667185120A72615009EDA7F /* Deal.swift */; };
+		666EEFCB20A74A850080FD42 /* StretchyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EEFCA20A74A850080FD42 /* StretchyHeaderView.swift */; };
+		666EEFCD20A74A900080FD42 /* StretchyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666EEFCC20A74A900080FD42 /* StretchyHeaderView.xib */; };
+		666EEFD020A7553A0080FD42 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EEFCF20A7553A0080FD42 /* UIImageExtension.swift */; };
+		666EEFD720A75CD10080FD42 /* DealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EEFD520A75CD10080FD42 /* DealTableViewCell.swift */; };
+		666EEFD820A75CD10080FD42 /* DealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666EEFD620A75CD10080FD42 /* DealTableViewCell.xib */; };
+		666EEFDA20A75E170080FD42 /* ASAGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EEFD920A75E160080FD42 /* ASAGradientView.swift */; };
+		666EEFDC20A777820080FD42 /* Deal+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EEFDB20A777820080FD42 /* Deal+Hero.swift */; };
+		666EEFDE20A77FB90080FD42 /* DealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EEFDD20A77FB90080FD42 /* DealDetailViewController.swift */; };
+		666EEFE120A7F87D0080FD42 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EEFDF20A7F87D0080FD42 /* FlightTableViewCell.swift */; };
+		666EEFE220A7F87D0080FD42 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666EEFE020A7F87D0080FD42 /* FlightTableViewCell.xib */; };
+		667D1B0920A916D600D84A30 /* CurrencySelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D1B0820A916D600D84A30 /* CurrencySelectTableViewController.swift */; };
+		667D1B0B20A91C2900D84A30 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D1B0A20A91C2900D84A30 /* SettingsManager.swift */; };
+		667D1B0E20A9308200D84A30 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D1B0D20A9308200D84A30 /* UIViewExtension.swift */; };
+		667D1B1020AA681700D84A30 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D1B0F20AA681700D84A30 /* UIDeviceExtension.swift */; };
+		668C3E0F20A890B9001905A5 /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C3E0D20A890B9001905A5 /* HotelTableViewCell.swift */; };
+		668C3E1020A890B9001905A5 /* HotelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668C3E0E20A890B9001905A5 /* HotelTableViewCell.xib */; };
+		668C3E1320A8B407001905A5 /* DateFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C3E1220A8B407001905A5 /* DateFormatHelper.swift */; };
+		668C3E1520A8DACA001905A5 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C3E1420A8DACA001905A5 /* SettingsTableViewController.swift */; };
+		668C3E1720A9098B001905A5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C3E1620A9098B001905A5 /* Currency.swift */; };
+		F6D4500AA5E13EB32494F78D /* Pods_SweetDeals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAB6468CEFA39D59A18590D /* Pods_SweetDeals.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		046D8E6DF50A54927673E403 /* Pods-SweetDeals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetDeals.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetDeals/Pods-SweetDeals.release.xcconfig"; sourceTree = "<group>"; };
+		61DC1720756E98D072D5246C /* Pods_UpsideDeals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpsideDeals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6667181F20A68A7B009EDA7F /* SweetDeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6667182220A68A7B009EDA7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6667182420A68A7B009EDA7F /* DealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
+		6667182720A68A7B009EDA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6667182920A68A7E009EDA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6667182C20A68A7E009EDA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6667182E20A68A7E009EDA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6667184720A68BC8009EDA7F /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		6667184920A68D7E009EDA7F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6667184B20A69080009EDA7F /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		6667184D20A690E5009EDA7F /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		6667184F20A691B4009EDA7F /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		6667185120A72615009EDA7F /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+		666EEFCA20A74A850080FD42 /* StretchyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderView.swift; sourceTree = "<group>"; };
+		666EEFCC20A74A900080FD42 /* StretchyHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StretchyHeaderView.xib; sourceTree = "<group>"; };
+		666EEFCF20A7553A0080FD42 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		666EEFD520A75CD10080FD42 /* DealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealTableViewCell.swift; sourceTree = "<group>"; };
+		666EEFD620A75CD10080FD42 /* DealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealTableViewCell.xib; sourceTree = "<group>"; };
+		666EEFD920A75E160080FD42 /* ASAGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAGradientView.swift; sourceTree = "<group>"; };
+		666EEFDB20A777820080FD42 /* Deal+Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deal+Hero.swift"; sourceTree = "<group>"; };
+		666EEFDD20A77FB90080FD42 /* DealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailViewController.swift; sourceTree = "<group>"; };
+		666EEFDF20A7F87D0080FD42 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		666EEFE020A7F87D0080FD42 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
+		667D1B0820A916D600D84A30 /* CurrencySelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectTableViewController.swift; sourceTree = "<group>"; };
+		667D1B0A20A91C2900D84A30 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		667D1B0D20A9308200D84A30 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		667D1B0F20AA681700D84A30 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		668C3E0D20A890B9001905A5 /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
+		668C3E0E20A890B9001905A5 /* HotelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelTableViewCell.xib; sourceTree = "<group>"; };
+		668C3E1220A8B407001905A5 /* DateFormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatHelper.swift; sourceTree = "<group>"; };
+		668C3E1420A8DACA001905A5 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		668C3E1620A9098B001905A5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		A5DC7FF091AFE828531A91FD /* Pods_UpsideDealsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpsideDealsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D47F4BDDDAC80D52FAAF3267 /* Pods-SweetDeals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetDeals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetDeals/Pods-SweetDeals.debug.xcconfig"; sourceTree = "<group>"; };
+		ECAB6468CEFA39D59A18590D /* Pods_SweetDeals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetDeals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6667181C20A68A7B009EDA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D4500AA5E13EB32494F78D /* Pods_SweetDeals.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5444C719F89104F82E5B71B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D47F4BDDDAC80D52FAAF3267 /* Pods-SweetDeals.debug.xcconfig */,
+				046D8E6DF50A54927673E403 /* Pods-SweetDeals.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6667181620A68A7B009EDA7F = {
+			isa = PBXGroup;
+			children = (
+				6667182120A68A7B009EDA7F /* SweetDeals */,
+				6667182020A68A7B009EDA7F /* Products */,
+				5444C719F89104F82E5B71B7 /* Pods */,
+				9CCD919104F83D5CEE842881 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6667182020A68A7B009EDA7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6667181F20A68A7B009EDA7F /* SweetDeals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6667182120A68A7B009EDA7F /* SweetDeals */ = {
+			isa = PBXGroup;
+			children = (
+				6667182220A68A7B009EDA7F /* AppDelegate.swift */,
+				6667184320A68AAF009EDA7F /* ViewControllers */,
+				6667184220A68AA5009EDA7F /* Managers */,
+				6667184520A68AC8009EDA7F /* Networking */,
+				6667184420A68ABC009EDA7F /* Models */,
+				6667184620A68B03009EDA7F /* Views */,
+				666EEFCE20A755130080FD42 /* Extensions&Helpers */,
+				6667182920A68A7E009EDA7F /* Assets.xcassets */,
+				6667182E20A68A7E009EDA7F /* Info.plist */,
+			);
+			path = SweetDeals;
+			sourceTree = "<group>";
+		};
+		6667184220A68AA5009EDA7F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6667184920A68D7E009EDA7F /* DataManager.swift */,
+				667D1B0A20A91C2900D84A30 /* SettingsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6667184320A68AAF009EDA7F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6667182420A68A7B009EDA7F /* DealsViewController.swift */,
+				666EEFDD20A77FB90080FD42 /* DealDetailViewController.swift */,
+				668C3E1420A8DACA001905A5 /* SettingsTableViewController.swift */,
+				667D1B0820A916D600D84A30 /* CurrencySelectTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6667184420A68ABC009EDA7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6667185120A72615009EDA7F /* Deal.swift */,
+				666EEFDB20A777820080FD42 /* Deal+Hero.swift */,
+				6667184B20A69080009EDA7F /* Hotel.swift */,
+				6667184D20A690E5009EDA7F /* Airport.swift */,
+				6667184F20A691B4009EDA7F /* Airline.swift */,
+				668C3E1620A9098B001905A5 /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6667184520A68AC8009EDA7F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6667184720A68BC8009EDA7F /* APIRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6667184620A68B03009EDA7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6667182620A68A7B009EDA7F /* Main.storyboard */,
+				6667182B20A68A7E009EDA7F /* LaunchScreen.storyboard */,
+				666EEFCA20A74A850080FD42 /* StretchyHeaderView.swift */,
+				666EEFCC20A74A900080FD42 /* StretchyHeaderView.xib */,
+				666EEFD520A75CD10080FD42 /* DealTableViewCell.swift */,
+				666EEFD620A75CD10080FD42 /* DealTableViewCell.xib */,
+				666EEFD920A75E160080FD42 /* ASAGradientView.swift */,
+				666EEFDF20A7F87D0080FD42 /* FlightTableViewCell.swift */,
+				666EEFE020A7F87D0080FD42 /* FlightTableViewCell.xib */,
+				668C3E0D20A890B9001905A5 /* HotelTableViewCell.swift */,
+				668C3E0E20A890B9001905A5 /* HotelTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		666EEFCE20A755130080FD42 /* Extensions&Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				666EEFCF20A7553A0080FD42 /* UIImageExtension.swift */,
+				668C3E1220A8B407001905A5 /* DateFormatHelper.swift */,
+				667D1B0D20A9308200D84A30 /* UIViewExtension.swift */,
+				667D1B0F20AA681700D84A30 /* UIDeviceExtension.swift */,
+			);
+			path = "Extensions&Helpers";
+			sourceTree = "<group>";
+		};
+		9CCD919104F83D5CEE842881 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61DC1720756E98D072D5246C /* Pods_UpsideDeals.framework */,
+				A5DC7FF091AFE828531A91FD /* Pods_UpsideDealsTests.framework */,
+				ECAB6468CEFA39D59A18590D /* Pods_SweetDeals.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6667181E20A68A7B009EDA7F /* SweetDeals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6667183C20A68A7E009EDA7F /* Build configuration list for PBXNativeTarget "SweetDeals" */;
+			buildPhases = (
+				99DB998AEDC0464D7029F27D /* [CP] Check Pods Manifest.lock */,
+				6667181B20A68A7B009EDA7F /* Sources */,
+				6667181C20A68A7B009EDA7F /* Frameworks */,
+				6667181D20A68A7B009EDA7F /* Resources */,
+				AFFFDE2043D81D1F0E0E0DA0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweetDeals;
+			productName = UpsideDeals;
+			productReference = 6667181F20A68A7B009EDA7F /* SweetDeals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6667181720A68A7B009EDA7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Anteneh Sahledengel";
+				TargetAttributes = {
+					6667181E20A68A7B009EDA7F = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 6667181A20A68A7B009EDA7F /* Build configuration list for PBXProject "SweetDeals" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6667181620A68A7B009EDA7F;
+			productRefGroup = 6667182020A68A7B009EDA7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6667181E20A68A7B009EDA7F /* SweetDeals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6667181D20A68A7B009EDA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6667182D20A68A7E009EDA7F /* LaunchScreen.storyboard in Resources */,
+				666EEFD820A75CD10080FD42 /* DealTableViewCell.xib in Resources */,
+				666EEFCD20A74A900080FD42 /* StretchyHeaderView.xib in Resources */,
+				6667182A20A68A7E009EDA7F /* Assets.xcassets in Resources */,
+				6667182820A68A7B009EDA7F /* Main.storyboard in Resources */,
+				666EEFE220A7F87D0080FD42 /* FlightTableViewCell.xib in Resources */,
+				668C3E1020A890B9001905A5 /* HotelTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99DB998AEDC0464D7029F27D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetDeals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFFDE2043D81D1F0E0E0DA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SweetDeals/Pods-SweetDeals-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToDismiss/PullToDismiss.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToDismiss.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetDeals/Pods-SweetDeals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6667181B20A68A7B009EDA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667D1B0920A916D600D84A30 /* CurrencySelectTableViewController.swift in Sources */,
+				6667184C20A69080009EDA7F /* Hotel.swift in Sources */,
+				667D1B0E20A9308200D84A30 /* UIViewExtension.swift in Sources */,
+				6667182520A68A7B009EDA7F /* DealsViewController.swift in Sources */,
+				668C3E0F20A890B9001905A5 /* HotelTableViewCell.swift in Sources */,
+				6667184A20A68D7E009EDA7F /* DataManager.swift in Sources */,
+				666EEFD020A7553A0080FD42 /* UIImageExtension.swift in Sources */,
+				666EEFE120A7F87D0080FD42 /* FlightTableViewCell.swift in Sources */,
+				6667185220A72615009EDA7F /* Deal.swift in Sources */,
+				668C3E1320A8B407001905A5 /* DateFormatHelper.swift in Sources */,
+				6667184E20A690E5009EDA7F /* Airport.swift in Sources */,
+				667D1B1020AA681700D84A30 /* UIDeviceExtension.swift in Sources */,
+				666EEFDA20A75E170080FD42 /* ASAGradientView.swift in Sources */,
+				668C3E1720A9098B001905A5 /* Currency.swift in Sources */,
+				6667184820A68BC8009EDA7F /* APIRequest.swift in Sources */,
+				666EEFDC20A777820080FD42 /* Deal+Hero.swift in Sources */,
+				6667182320A68A7B009EDA7F /* AppDelegate.swift in Sources */,
+				6667185020A691B4009EDA7F /* Airline.swift in Sources */,
+				666EEFDE20A77FB90080FD42 /* DealDetailViewController.swift in Sources */,
+				667D1B0B20A91C2900D84A30 /* SettingsManager.swift in Sources */,
+				666EEFCB20A74A850080FD42 /* StretchyHeaderView.swift in Sources */,
+				666EEFD720A75CD10080FD42 /* DealTableViewCell.swift in Sources */,
+				668C3E1520A8DACA001905A5 /* SettingsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6667182620A68A7B009EDA7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6667182720A68A7B009EDA7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6667182B20A68A7E009EDA7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6667182C20A68A7E009EDA7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6667183A20A68A7E009EDA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6667183B20A68A7E009EDA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6667183D20A68A7E009EDA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47F4BDDDAC80D52FAAF3267 /* Pods-SweetDeals.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGEKQ9U6E7;
+				INFOPLIST_FILE = SweetDeals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ewketapps.SweetDeals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6667183E20A68A7E009EDA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 046D8E6DF50A54927673E403 /* Pods-SweetDeals.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGEKQ9U6E7;
+				INFOPLIST_FILE = SweetDeals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ewketapps.SweetDeals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6667181A20A68A7B009EDA7F /* Build configuration list for PBXProject "SweetDeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6667183A20A68A7E009EDA7F /* Debug */,
+				6667183B20A68A7E009EDA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6667183C20A68A7E009EDA7F /* Build configuration list for PBXNativeTarget "SweetDeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6667183D20A68A7E009EDA7F /* Debug */,
+				6667183E20A68A7E009EDA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6667181720A68A7B009EDA7F /* Project object */;
+}

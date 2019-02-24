@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="FlightTableViewCell" customModule="UpsideDeals" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OUTBOUND - JANUARY 6, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPe-zj-Ir6">
+                        <rect key="frame" x="16" y="11" width="288" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="lQg-Z3-K0b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:04 - 07:30 (+1)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdo-vM-BJp">
+                        <rect key="frame" x="129" y="75" width="117" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airline-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="bVe-K9-XXh">
+                        <rect key="frame" x="16" y="38.5" width="47" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="a5d-uN-4PT"/>
+                            <constraint firstAttribute="width" constant="47" id="cec-fQ-8ax"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JFK - LHR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxE-m8-6Bd">
+                        <rect key="frame" x="156" y="93" width="63.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFL-A4-tYU">
+                        <rect key="frame" x="71" y="37" width="233" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEWYORK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="OTM-Ea-Xa2">
+                                <rect key="frame" x="10" y="6" width="86.5" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LONDON" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Hrx-MX-DK0">
+                                <rect key="frame" x="136.5" y="6" width="86.5" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane-icon" translatesAutoresizingMaskIntoConstraints="NO" id="75d-US-y24">
+                                <rect key="frame" x="106" y="5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="F46-XH-tZb"/>
+                                    <constraint firstAttribute="width" constant="20" id="jSd-GU-pWn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OTM-Ea-Xa2" firstAttribute="centerY" secondItem="EFL-A4-tYU" secondAttribute="centerY" id="1wL-5h-smZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Hrx-MX-DK0" secondAttribute="bottom" constant="6" id="62D-wI-JiS"/>
+                            <constraint firstItem="OTM-Ea-Xa2" firstAttribute="trailing" secondItem="EFL-A4-tYU" secondAttribute="centerX" constant="-20" id="FBX-ED-dJi"/>
+                            <constraint firstItem="75d-US-y24" firstAttribute="centerX" secondItem="EFL-A4-tYU" secondAttribute="centerX" id="OZw-Ls-gIf"/>
+                            <constraint firstItem="75d-US-y24" firstAttribute="centerY" secondItem="EFL-A4-tYU" secondAttribute="centerY" id="Sic-Y2-tQs"/>
+                            <constraint firstAttribute="bottom" secondItem="OTM-Ea-Xa2" secondAttribute="bottom" constant="6" id="Ttt-Bc-E5r"/>
+                            <constraint firstItem="OTM-Ea-Xa2" firstAttribute="top" secondItem="EFL-A4-tYU" secondAttribute="top" constant="6" id="iUK-Wv-hIU"/>
+                            <constraint firstItem="Hrx-MX-DK0" firstAttribute="centerY" secondItem="EFL-A4-tYU" secondAttribute="centerY" id="n40-2T-WIe"/>
+                            <constraint firstItem="Hrx-MX-DK0" firstAttribute="top" secondItem="EFL-A4-tYU" secondAttribute="top" constant="6" id="rwN-wA-im7"/>
+                            <constraint firstItem="OTM-Ea-Xa2" firstAttribute="leading" secondItem="EFL-A4-tYU" secondAttribute="leading" constant="10" id="t9j-cE-UsG"/>
+                            <constraint firstAttribute="trailing" secondItem="Hrx-MX-DK0" secondAttribute="trailing" constant="10" id="voY-XZ-P5L"/>
+                            <constraint firstItem="Hrx-MX-DK0" firstAttribute="leading" secondItem="EFL-A4-tYU" secondAttribute="centerX" constant="20" id="yao-nL-6hc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AIRLINE NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XAA-S4-KTk">
+                        <rect key="frame" x="8" y="91" width="62" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="a7l-Rq-rBX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EFL-A4-tYU" firstAttribute="leading" secondItem="bVe-K9-XXh" secondAttribute="trailing" constant="8" id="0nq-0U-CJO"/>
+                    <constraint firstItem="EFL-A4-tYU" firstAttribute="top" secondItem="vPe-zj-Ir6" secondAttribute="bottom" constant="10" id="1JC-jJ-1Du"/>
+                    <constraint firstItem="vPe-zj-Ir6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="GVJ-bf-1sU"/>
+                    <constraint firstItem="XAA-S4-KTk" firstAttribute="centerX" secondItem="bVe-K9-XXh" secondAttribute="centerX" id="HQa-R6-CYp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DxE-m8-6Bd" secondAttribute="bottom" constant="3" id="ITn-cD-NEE"/>
+                    <constraint firstItem="rdo-vM-BJp" firstAttribute="top" secondItem="EFL-A4-tYU" secondAttribute="bottom" constant="8" id="OWh-U7-mDd"/>
+                    <constraint firstItem="rdo-vM-BJp" firstAttribute="centerX" secondItem="EFL-A4-tYU" secondAttribute="centerX" id="PiC-OF-C8N"/>
+                    <constraint firstItem="EFL-A4-tYU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="a55-Kf-k7R"/>
+                    <constraint firstItem="DxE-m8-6Bd" firstAttribute="top" secondItem="rdo-vM-BJp" secondAttribute="bottom" constant="2" id="caJ-CW-tjn"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XAA-S4-KTk" secondAttribute="bottom" constant="5" id="gSN-K8-7gO"/>
+                    <constraint firstItem="bVe-K9-XXh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jss-PO-6cZ"/>
+                    <constraint firstItem="vPe-zj-Ir6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="kvF-Mh-grH"/>
+                    <constraint firstItem="DxE-m8-6Bd" firstAttribute="centerX" secondItem="rdo-vM-BJp" secondAttribute="centerX" id="oZp-XL-8rL"/>
+                    <constraint firstItem="XAA-S4-KTk" firstAttribute="top" secondItem="bVe-K9-XXh" secondAttribute="bottom" constant="6.5" id="roe-1I-RNg"/>
+                    <constraint firstItem="bVe-K9-XXh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uk0-Fx-0JK"/>
+                    <constraint firstItem="vPe-zj-Ir6" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zWo-7y-Dmx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="airlineImageView" destination="bVe-K9-XXh" id="8Y1-9Z-hU9"/>
+                <outlet property="airlineNameLabel" destination="XAA-S4-KTk" id="bub-Kz-grl"/>
+                <outlet property="airportsLabel" destination="DxE-m8-6Bd" id="NO5-uj-Kcm"/>
+                <outlet property="dateLabel" destination="vPe-zj-Ir6" id="g17-Bn-bP9"/>
+                <outlet property="destinationLabel" destination="Hrx-MX-DK0" id="xmN-nw-Ybr"/>
+                <outlet property="durationLabel" destination="rdo-vM-BJp" id="Nu4-Og-MGH"/>
+                <outlet property="originLabel" destination="OTM-Ea-Xa2" id="1pm-oe-4Q0"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="31.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="airline-placeholder" width="33" height="33"/>
+        <image name="plane-icon" width="33" height="33"/>
+    </resources>
+</document>
